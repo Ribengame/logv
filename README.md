@@ -97,6 +97,7 @@ git clone https://github.com/Ribengame/logv && cd logv && sudo ./install.sh
 
 Installation behavior:
 
+- Arch-like systems with `yay`: install the AUR package `logv`
 - Debian-like systems: build and install a local `.deb`
 - other Linux distributions: install a portable build into `/opt/logv`
 - wrapper command exposed as `/usr/bin/logv`
