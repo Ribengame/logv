@@ -269,14 +269,6 @@ Run the sample log:
 logv samples/app.log
 ```
 
-Prepare AUR metadata from an upstream GitHub repo:
-
-```bash
-./packaging/prepare_aur.sh \
-  --upstream-url https://github.com/Ribengame/logv \
-  --aur-remote ssh://aur@aur.archlinux.org/logv.git
-```
-
 ## Notes
 
 - TUI loads the full file for smaller logs and falls back to bounded history for larger inputs.
