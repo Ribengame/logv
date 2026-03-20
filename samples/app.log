@@ -1,0 +1,11 @@
+2026-03-20 10:00:01 INFO api.server: started on http://127.0.0.1:8080
+2026-03-20 10:00:05 WARN api.server: slow request from 192.168.1.22 status=404
+2026-03-20 10:00:07 ERROR api.server: upstream failed with status 500 for https://example.internal/orders
+Traceback (most recent call last):
+  File "/srv/app.py", line 51, in handle_request
+    raise RuntimeError("database timeout")
+RuntimeError: database timeout
+2026-03-20 10:01:00 INFO worker.sync: synced 120 records
+2026-03-20 10:01:02 ERROR worker.sync: connection refused from 10.0.0.5
+2026-03-20 10:01:02 ERROR worker.sync: connection refused from 10.0.0.5
+2026-03-20 10:01:03 DEBUG worker.sync: retry in 5 seconds

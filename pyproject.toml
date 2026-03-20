@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logv"
+version = "0.1.0"
+description = "Fast CLI/TUI log viewer for Linux terminals"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Oskar Gerlicz-Kowalczuk" }
+]
+license = { text = "MIT" }
+dependencies = [
+  "rich>=13.7.1",
+  "textual>=0.61.1",
+  "typer>=0.12.3",
+]
+keywords = ["logs", "tui", "cli", "terminal", "viewer"]
+classifiers = [
+  "Environment :: Console",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: AGPL License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: System :: Logging",
+  "Topic :: Terminals",
+  "Topic :: Utilities",
+]
+
+[project.scripts]
+logv = "logv.main:app_entry"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["logv*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
