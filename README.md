@@ -87,6 +87,20 @@ Most terminal log workflows are powerful but fragmented. You end up bouncing bet
 
 ## Installation
 
+### Quick install
+
+Clone the repository and let `install.sh` choose the installation strategy automatically:
+
+```bash
+git clone https://github.com/Ribengame/logv && cd logv && sudo ./install.sh
+```
+
+Installation behavior:
+
+- Debian-like systems: build and install a local `.deb`
+- other Linux distributions: install a portable build into `/opt/logv`
+- wrapper command exposed as `/usr/bin/logv`
+
 ### Arch Linux
 
 `logv` is available on AUR as `logv`.
